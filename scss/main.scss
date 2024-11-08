@@ -69,15 +69,16 @@ body {
 
 .box {
     width: 413px;
-    padding-left: 80px;
 }
 
 .box:nth-child(2) {
     border-left: 1px solid #D7D7DD;
+        padding-left: 80px;
 }
 
 .box:nth-child(3) {
     border-left: 1px solid #D7D7DD;
+        padding-left: 80px;
 }
 
 .title-box-first {
@@ -107,12 +108,41 @@ body {
 
 .truck-image {
     background-image: url(../images/truck.png);
+    width: 1240px;
+    height: 453px;
+}
+
+.clip {
+    width: 769px;
+    height: 454px;
+    background-color: #0B7572;
+    clip-path: polygon(0% 0%, 50% 0%, 100% 100%, 0% 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clip-path {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+    color: #FFFFFF;
+    max-width: 362px;
+    width: 100%;
+    margin-right: 250px;
 }
 
 .block {
     display: flex;
-    padding: 73px 164px;
+    flex-direction: column;
+    margin-top: 67px;
+}
+
+.all {
+    display: flex;
     gap: 140px;
+    padding: 73px 164px;
 }
 
 .info {
@@ -135,6 +165,248 @@ body {
     color: #6B6B6C;
     width: 291px;
     margin-top: 10px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fourth-box {
+    max-width: 393px;
+    width: 100%;
+    // padding: 32px 32px;
+    transition: all 0.3s ease-in-out;
+}
+
+.fourth-box:hover {
+    box-shadow: 1px 10px 10px 10px #0000001F;
+}
+
+.box-text {
+    padding: 32px 32px;
+    box-shadow: 0px 0px 15px 0px #0000001F;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: -3px;
+}
+
+.fourth-title {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+    color: #363738;
+    margin-bottom: 32px;
+}
+
+.fourth-paragraph {
+    line-height: 24px;
+    color: #6B6B6C;
+    margin-bottom: 56px;
+    max-width: 667px;
+    width: 100%;
+}
+
+.box-title {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #363738;
+    margin-bottom: 16px;
+}
+
+.box-p {
+    line-height: 24px;
+    color: #6B6B6C;
+    margin-bottom: 32px;
+}
+
+.price {
+    text-decoration: none;
+    color: #363738;
+    border-bottom: 3px solid #FFCE50;
+    font-weight: 600;
+    line-height: 22px;
+    transition: all 0.3s ease-in-out;
+}
+
+.price:hover {
+    color: #a38436;
+    border-bottom: 3px solid #a38436;
+}
+
+.card {
+    display: flex;
+    gap: 56px;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 96px;
+    box-shadow: 0px 4px 15px 0px #0000001F;
+    border-radius: 10px;
+    margin-top: 24px;
+}
+
+.fiveth-cards {
+    margin-top: 80px;
+    padding-left: 49px;
+}
+
+.block-fiveth {
+    padding-top: 120px;
+}
+
+.fiveth {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: #363738;
+    margin-bottom: 24px;
+}
+
+.border {
+    max-width: 86px;
+    width: 100%;
+    border: 3px solid #FFCE50;
+    margin-bottom: 24px;
+    cursor: pointer;
+}
+
+.fiveth-paragraph {
+    line-height: 24px;
+    color: #6B6B6C;
+}
+
+.first-line-logo {
+    display: flex;
+    align-items: center;
+}
+
+.box-logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 225px;
+    width: 100%;
+}
+
+.box-logo:nth-child(2) {
+    margin-top: 5px;
+    border-left: 1px solid #D7D7DD;
+    padding-left: 90px;
+    // margin-right: 160px;
+}
+
+.box-logo:nth-child(3) {
+    border-left: 1px solid #D7D7DD;
+    padding-left: 100px;
+}
+
+.box-logo:nth-child(4) {
+    margin-top: 7px;
+    border-left: 1px solid #D7D7DD;
+    padding-left: 49px;
+}
+
+.logo-title-sec {
+    margin-top: 56px;
+}
+
+.sixth {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+    color: #363738;
+    margin-top: 120px;
+}
+
+.logo-title {
+    margin-top: 32px;
+}
+
+.logo-span {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #6B6B6C;
+    margin-top: 14px;
+}
+
+.logo-1 {
+    width: 79px;
+    height: 101px;
+}
+
+.logo-2 {
+    width: 150px;
+    height: 72px;
+}
+
+.logo-3 {
+    width: 125px;
+    height: 100px;
+}
+
+.logo-4 {
+    width: 77px;
+    height: 94px;
+}
+
+.logo-5 {
+    width: 182px;
+    height: 49px;
+}
+
+.logo-6 {
+    width: 95px;
+    height: 88px;
+}
+
+.logo-7 {
+    width: 79px;
+    height: 97px;
+}
+
+.logo-8 {
+    width: 145px;
+    height: 52px;
+}
+
+.logos {
+    padding-left: 30px;
+    margin-top: 90px;
+}
+
+.first-line-logo,
+.second-line-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.first-line-logo {
+    margin-bottom: 71px;
+}
+
+.logo-title-second {
+    margin-top: 58px;
+}
+
+.logo-title-third {
+    margin-top: 36px;
+}
+
+.logo-title-fourth {
+    margin-top: 33px;
+}
+
+.logo-title-fiveth {
+    margin-top: 90px;
 }
 
 @media screen and (max-width: 992px){
@@ -218,10 +490,12 @@ body {
 
     .box:nth-child(2) {
         border-left: none;
+        padding-left: 40px;
     }
 
     .box:nth-child(3) {
         border-left: none;
+        padding-left: 40px;
     }
 
     .block {
@@ -239,6 +513,101 @@ body {
         margin-top: 0px;
         margin-top: 48px;
     }
+
+    .truck-image {
+        width: 729px;
+        background-position: left 10px;
+    }
+
+    .clip {
+        width: 600px;
+    }
+
+    .clip-path {
+        max-width: 288px;
+        width: 100%;
+        font-size: 44px;
+        line-height: 55px;
+        margin-left: 100px;
+    }
+
+    .all {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .fourth-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-right: 75px;
+        box-shadow: none;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        margin-top: -50px;
+    }
+
+    .box-text {
+        width: 690px;
+    }
+
+    .fourth-box:nth-child(3) {
+        display: none;
+    }
+
+    .fiveth-title {
+        font-weight: 600;
+        font-size: 44px;
+        line-height: 55px;
+        color: #363738;
+    }
+
+    .card > img {
+        display: none;
+    }
+
+    .fiveth-cards {
+        padding-left: 0px;
+    }
+
+    .first-line-logo {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .second-line-logo {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .logos {
+        padding-left: 30px;
+    }
+
+    .box-logo:nth-child(2) {
+        margin-left: 70px;
+        margin-right: 170px;
+        padding-left: 100px;
+    }
+
+    .box-logo:nth-child(3) {
+        border-left: none;
+        padding-left: 0px;
+        margin-top: 64px;
+    }
+
+    .box-logo:nth-child(4) {
+        margin-right: 170px;
+        margin-top: 64px;
+        
+    }
 }
 
 @media screen and (max-width: 576px){
@@ -254,6 +623,94 @@ body {
         align-items: center;
         justify-content: center;
         flex-direction: column;
+    }
+
+    .box:nth-child(1) {
+        padding: 0px;
+    }
+
+    .box:nth-child(2) {
+        border-left: 1px solid #D7D7DD;
+        padding: 0px;
+    }
+    
+    .box:nth-child(3) {
+        border-left: 1px solid #D7D7DD;
+        padding-left: 0px;
+    }
+
+    .fourth-box:nth-child(2) {
+        display: none;
+    }
+
+    .truck-image {
+        display: none;
+    }
+
+    .box {
+        padding-left: 0px;
+    }
+
+    .fourth-title {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 35px;
+        color: #363738;
+    }
+
+    .box-text {
+        max-width: 345px;
+        width: 100%;
+        margin-left: 40px;
+    }
+
+    .truck {
+        margin-left: 40px;
+    }
+
+    .fiveth-title {
+        font-size: 28px;
+        line-height: 35px;
+        color: #363738;
+    }
+
+    .card {
+        max-width: 338px;
+        width: 100%;
+        padding: 40px 200px;
+    }
+
+    .first-line-logo {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .box-logo {
+        max-width: 173px;
+        width: 100%;
+    }
+
+    .box-logo:nth-child(2) {
+        padding-left: 30px;
+        margin: 0px 0px;
+    }
+
+    .box-logo:nth-child(4) {
+        
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .second-line-logo {
+        display: none;
+    }
+
+    .fiveth {
+        width: 285px;
+    }
+
+    .border {
+        display: none;
     }
 
     .title {
@@ -286,12 +743,6 @@ body {
 
     picture > img {
         margin-top: 40px;
-    }
-
-    .delivery {
-        margin-top: 40px;
-        width: 345px;
-        padding-left: 15px;
     }
 
     .information {
@@ -336,9 +787,7 @@ body {
         margin-left: -25px;
     }
 
-    .box {
-        padding-left: 0px;
-    }
+    
 
     .paragraph-box {
         width: 290px;
@@ -358,6 +807,7 @@ body {
 
     .box:nth-child(3) {
         border-left: none;
+
     }
 
     .block {
